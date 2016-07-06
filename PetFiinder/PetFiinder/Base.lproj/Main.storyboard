@@ -62,19 +62,19 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t1m-T1-7le">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="114"/>
+                                            <rect key="frame" x="2" y="15" width="100" height="97"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="nAJ-2h-T7W"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjh-yd-jyw">
-                                            <rect key="frame" x="150" y="0.0" width="450" height="21"/>
+                                            <rect key="frame" x="152" y="15" width="448" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loN-Us-3x8">
-                                            <rect key="frame" x="150" y="43" width="450" height="21"/>
+                                            <rect key="frame" x="152" y="43" width="448" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -82,11 +82,11 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Wjh-yd-jyw" firstAttribute="leading" secondItem="t1m-T1-7le" secondAttribute="trailing" constant="50" id="0LP-xs-ANP"/>
-                                        <constraint firstAttribute="bottom" secondItem="t1m-T1-7le" secondAttribute="bottom" id="5Hh-Ud-MFy"/>
-                                        <constraint firstItem="t1m-T1-7le" firstAttribute="top" secondItem="vVk-fu-9rr" secondAttribute="top" id="7xY-RL-ZT8"/>
-                                        <constraint firstItem="t1m-T1-7le" firstAttribute="leading" secondItem="vVk-fu-9rr" secondAttribute="leading" id="DJh-W6-tZ7"/>
+                                        <constraint firstAttribute="bottom" secondItem="t1m-T1-7le" secondAttribute="bottom" constant="2" id="5Hh-Ud-MFy"/>
+                                        <constraint firstItem="t1m-T1-7le" firstAttribute="top" secondItem="vVk-fu-9rr" secondAttribute="top" constant="15" id="7xY-RL-ZT8"/>
+                                        <constraint firstItem="t1m-T1-7le" firstAttribute="leading" secondItem="vVk-fu-9rr" secondAttribute="leading" constant="2" id="DJh-W6-tZ7"/>
                                         <constraint firstAttribute="trailing" secondItem="Wjh-yd-jyw" secondAttribute="trailing" id="SJu-FP-bem"/>
-                                        <constraint firstItem="Wjh-yd-jyw" firstAttribute="top" secondItem="vVk-fu-9rr" secondAttribute="top" id="YDO-3A-Tik"/>
+                                        <constraint firstItem="Wjh-yd-jyw" firstAttribute="top" secondItem="vVk-fu-9rr" secondAttribute="top" constant="15" id="YDO-3A-Tik"/>
                                         <constraint firstItem="loN-Us-3x8" firstAttribute="leading" secondItem="t1m-T1-7le" secondAttribute="trailing" constant="50" id="dKh-jr-4ud"/>
                                         <constraint firstAttribute="bottom" secondItem="loN-Us-3x8" secondAttribute="bottom" constant="50" id="fEI-9F-5jv"/>
                                         <constraint firstAttribute="trailing" secondItem="loN-Us-3x8" secondAttribute="trailing" id="tJ3-rC-Ijz"/>
