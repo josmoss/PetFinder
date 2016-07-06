@@ -14,6 +14,7 @@
 		D881B2A61D2DA13A00B92518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D881B2A41D2DA13A00B92518 /* LaunchScreen.storyboard */; };
 		D881B2AE1D2DA8EA00B92518 /* AdoptablesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881B2AD1D2DA8EA00B92518 /* AdoptablesTableViewController.swift */; };
 		D881B2B01D2DA9D500B92518 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881B2AF1D2DA9D500B92518 /* Dog.swift */; };
+		D881B2B41D2DBA5D00B92518 /* DogsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881B2B31D2DBA5D00B92518 /* DogsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D881B2A71D2DA13A00B92518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D881B2AD1D2DA8EA00B92518 /* AdoptablesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptablesTableViewController.swift; sourceTree = "<group>"; };
 		D881B2AF1D2DA9D500B92518 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		D881B2B31D2DBA5D00B92518 /* DogsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				D881B2991D2DA13A00B92518 /* AppDelegate.swift */,
 				D881B29F1D2DA13A00B92518 /* Main.storyboard */,
+				D881B2B31D2DBA5D00B92518 /* DogsTableViewCell.swift */,
 				D881B2B11D2DAAAA00B92518 /* Model */,
 				D881B2B21D2DAAB900B92518 /* Controllers */,
 				D881B2A21D2DA13A00B92518 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 			files = (
 				D881B29A1D2DA13A00B92518 /* AppDelegate.swift in Sources */,
 				D881B2AE1D2DA8EA00B92518 /* AdoptablesTableViewController.swift in Sources */,
+				D881B2B41D2DBA5D00B92518 /* DogsTableViewCell.swift in Sources */,
 				D881B2B01D2DA9D500B92518 /* Dog.swift in Sources */,
 				D881B29C1D2DA13A00B92518 /* FirstViewController.swift in Sources */,
 			);

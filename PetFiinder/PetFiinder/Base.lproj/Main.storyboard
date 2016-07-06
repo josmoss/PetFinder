@@ -49,18 +49,54 @@
         <scene sceneID="pti-6v-OZp">
             <objects>
                 <tableViewController id="Lnb-NL-iO2" customClass="AdoptablesTableViewController" customModule="PetFiinder" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iU3-UE-Hj1">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="28" sectionFooterHeight="28" id="iU3-UE-Hj1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DogCell" id="ex8-rS-EEf">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DogCell" rowHeight="115" id="ex8-rS-EEf" customClass="DogsTableViewCell" customModule="PetFiinder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ex8-rS-EEf" id="vVk-fu-9rr">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="114"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t1m-T1-7le">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="114"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="nAJ-2h-T7W"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjh-yd-jyw">
+                                            <rect key="frame" x="150" y="0.0" width="450" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loN-Us-3x8">
+                                            <rect key="frame" x="150" y="43" width="450" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Wjh-yd-jyw" firstAttribute="leading" secondItem="t1m-T1-7le" secondAttribute="trailing" constant="50" id="0LP-xs-ANP"/>
+                                        <constraint firstAttribute="bottom" secondItem="t1m-T1-7le" secondAttribute="bottom" id="5Hh-Ud-MFy"/>
+                                        <constraint firstItem="t1m-T1-7le" firstAttribute="top" secondItem="vVk-fu-9rr" secondAttribute="top" id="7xY-RL-ZT8"/>
+                                        <constraint firstItem="t1m-T1-7le" firstAttribute="leading" secondItem="vVk-fu-9rr" secondAttribute="leading" id="DJh-W6-tZ7"/>
+                                        <constraint firstAttribute="trailing" secondItem="Wjh-yd-jyw" secondAttribute="trailing" id="SJu-FP-bem"/>
+                                        <constraint firstItem="Wjh-yd-jyw" firstAttribute="top" secondItem="vVk-fu-9rr" secondAttribute="top" id="YDO-3A-Tik"/>
+                                        <constraint firstItem="loN-Us-3x8" firstAttribute="leading" secondItem="t1m-T1-7le" secondAttribute="trailing" constant="50" id="dKh-jr-4ud"/>
+                                        <constraint firstAttribute="bottom" secondItem="loN-Us-3x8" secondAttribute="bottom" constant="50" id="fEI-9F-5jv"/>
+                                        <constraint firstAttribute="trailing" secondItem="loN-Us-3x8" secondAttribute="trailing" id="tJ3-rC-Ijz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="breedLabel" destination="loN-Us-3x8" id="mED-bC-AlL"/>
+                                    <outlet property="dogImageView" destination="t1m-T1-7le" id="sW0-52-w3p"/>
+                                    <outlet property="nameLabel" destination="Wjh-yd-jyw" id="3iB-8K-Try"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

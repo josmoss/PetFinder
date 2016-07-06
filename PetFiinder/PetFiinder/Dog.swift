@@ -10,15 +10,20 @@ import UIKit
 
 class Dog: NSObject {
     
-    var name : String = ""
-    var age : Int = 0
-    var imageName : String = ""
-    var breed : String = ""
-    var size : String = ""
-    var gender : String = ""
+    var name : String
+    var age : String
+    var imageName : String
+    var breed : String
+    var size : String
+    var gender : String
     
-    override init() {
-        super.init()
+    init(name: String, age: String, imageName: String, breed: String, size: String, gender: String) {
+        self.name = name
+        self.age = age
+        self.imageName = imageName
+        self.breed = breed
+        self.size = size
+        self.gender = gender
     }
 
 }
