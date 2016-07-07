@@ -16,6 +16,8 @@ class AdoptablesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 60))
+        
         let Athena = Dog(name: "Athena", age: "Adult", imageName: "d1Athena", breed: "Chihuahua", size: "Small", gender: "Female")
         self.dogsArray.append(Athena)
         
