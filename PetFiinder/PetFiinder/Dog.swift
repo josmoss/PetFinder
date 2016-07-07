@@ -17,6 +17,10 @@ class Dog: NSObject {
     var size : String
     var gender : String
     
+    var image : UIImage? {
+        return UIImage(named: self.imageName)
+    }
+    
     init(name: String, age: String, imageName: String, breed: String, size: String, gender: String) {
         self.name = name
         self.age = age

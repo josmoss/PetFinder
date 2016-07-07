@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ECA25451D2EBB4D00F5135F /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA25431D2EBB4D00F5135F /* CardStack.swift */; };
+		5ECA25461D2EBB4D00F5135F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA25441D2EBB4D00F5135F /* CardView.swift */; };
 		D881B29A1D2DA13A00B92518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881B2991D2DA13A00B92518 /* AppDelegate.swift */; };
 		D881B29C1D2DA13A00B92518 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881B29B1D2DA13A00B92518 /* FirstViewController.swift */; };
 		D881B2A11D2DA13A00B92518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D881B29F1D2DA13A00B92518 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5ECA25431D2EBB4D00F5135F /* CardStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		5ECA25441D2EBB4D00F5135F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D881B2961D2DA13A00B92518 /* PetFiinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFiinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D881B2991D2DA13A00B92518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D881B29B1D2DA13A00B92518 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5ECA25471D2EBB6300F5135F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D881B2B31D2DBA5D00B92518 /* DogsTableViewCell.swift */,
+				5ECA25431D2EBB4D00F5135F /* CardStack.swift */,
+				5ECA25441D2EBB4D00F5135F /* CardView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		D881B28D1D2DA13A00B92518 = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +76,7 @@
 			children = (
 				D881B2991D2DA13A00B92518 /* AppDelegate.swift */,
 				D881B29F1D2DA13A00B92518 /* Main.storyboard */,
-				D881B2B31D2DBA5D00B92518 /* DogsTableViewCell.swift */,
+				5ECA25471D2EBB6300F5135F /* Views */,
 				D881B2B11D2DAAAA00B92518 /* Model */,
 				D881B2B21D2DAAB900B92518 /* Controllers */,
 				D881B2A21D2DA13A00B92518 /* Assets.xcassets */,
@@ -160,8 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECA25461D2EBB4D00F5135F /* CardView.swift in Sources */,
 				D881B29A1D2DA13A00B92518 /* AppDelegate.swift in Sources */,
 				D881B2AE1D2DA8EA00B92518 /* AdoptablesTableViewController.swift in Sources */,
+				5ECA25451D2EBB4D00F5135F /* CardStack.swift in Sources */,
 				D881B2B41D2DBA5D00B92518 /* DogsTableViewCell.swift in Sources */,
 				D881B2B01D2DA9D500B92518 /* Dog.swift in Sources */,
 				D881B29C1D2DA13A00B92518 /* FirstViewController.swift in Sources */,
@@ -314,6 +330,7 @@
 				D881B2AC1D2DA13A00B92518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

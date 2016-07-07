@@ -13,6 +13,7 @@ class AdoptablesTableViewController: UITableViewController {
     var dogsArray = [Dog]()
     var currentDog: Dog?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

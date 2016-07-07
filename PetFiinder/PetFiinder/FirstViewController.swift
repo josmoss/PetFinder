@@ -8,16 +8,26 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, CardStackDelegate {
 
+    @IBOutlet weak var cardStackView: CardStack!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        
+        // IMPORTANT
+        self.cardStackView.delegate = self
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    func cardInterested(dog: Dog) {
+        print("interested in \(dog.name)")
+    }
+    
+    func cardNotInterested(dog: Dog) {
+        print("not interested in \(dog.name)")
     }
 
 
