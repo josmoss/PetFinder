@@ -20,6 +20,7 @@
 		D8F5A41C1D2FFFA000C056F3 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5A41B1D2FFFA000C056F3 /* DataStore.swift */; };
 		D8F5A4201D300B9C00C056F3 /* AllDogsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5A41F1D300B9C00C056F3 /* AllDogsCollectionViewCell.swift */; };
 		D8F5A4221D300CCD00C056F3 /* AllDogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5A4211D300CCD00C056F3 /* AllDogsViewController.swift */; };
+		D8F5A4241D301F0E00C056F3 /* DogMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5A4231D301F0E00C056F3 /* DogMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D8F5A41B1D2FFFA000C056F3 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		D8F5A41F1D300B9C00C056F3 /* AllDogsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllDogsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8F5A4211D300CCD00C056F3 /* AllDogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllDogsViewController.swift; sourceTree = "<group>"; };
+		D8F5A4231D301F0E00C056F3 /* DogMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				D881B29B1D2DA13A00B92518 /* FirstViewController.swift */,
 				D881B2AD1D2DA8EA00B92518 /* AdoptablesTableViewController.swift */,
 				D8F5A4211D300CCD00C056F3 /* AllDogsViewController.swift */,
+				D8F5A4231D301F0E00C056F3 /* DogMapViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F5A4241D301F0E00C056F3 /* DogMapViewController.swift in Sources */,
 				5ECA25461D2EBB4D00F5135F /* CardView.swift in Sources */,
 				D8F5A4221D300CCD00C056F3 /* AllDogsViewController.swift in Sources */,
 				D8F5A41C1D2FFFA000C056F3 /* DataStore.swift in Sources */,

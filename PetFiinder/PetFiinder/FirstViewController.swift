@@ -24,6 +24,9 @@ class FirstViewController: UIViewController, CardStackDelegate {
     
     func cardInterested(dog: Dog) {
         print("interested in \(dog.name)")
+        
+        DataStore.sharedInstance.addFavoriteDog(dog)
+        
     }
     
     func cardNotInterested(dog: Dog) {

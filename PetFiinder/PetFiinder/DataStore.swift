@@ -14,6 +14,7 @@ class DataStore: NSObject {
     private override init() { }
     
     private var addDog = [Dog]()
+    private var addFavoriteDog = [Dog]()
     
     func seedDog() {
         
@@ -94,5 +95,22 @@ class DataStore: NSObject {
         
         return self.addDog.count
     }
+    
+    func favoriteAtIndex(index: Int) -> Dog? {
+        if self.addFavoriteDog.count >= 0 && index < self.addFavoriteDog.count {
+            return self.addFavoriteDog[index]
+        }
+        return nil
+    }
+    
+    func addFavoriteDog(dog: Dog) {
+        self.addFavoriteDog.append(dog)
+    }
+    
+    func favoriteNumberOfDogs() -> Int {
+        
+        return self.addFavoriteDog.count
+    }
+
 
 }
