@@ -17,6 +17,7 @@
 		D881B2AE1D2DA8EA00B92518 /* AdoptablesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881B2AD1D2DA8EA00B92518 /* AdoptablesTableViewController.swift */; };
 		D881B2B01D2DA9D500B92518 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881B2AF1D2DA9D500B92518 /* Dog.swift */; };
 		D881B2B41D2DBA5D00B92518 /* DogsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881B2B31D2DBA5D00B92518 /* DogsTableViewCell.swift */; };
+		D8F5A41C1D2FFFA000C056F3 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5A41B1D2FFFA000C056F3 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D881B2AD1D2DA8EA00B92518 /* AdoptablesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdoptablesTableViewController.swift; sourceTree = "<group>"; };
 		D881B2AF1D2DA9D500B92518 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		D881B2B31D2DBA5D00B92518 /* DogsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsTableViewCell.swift; sourceTree = "<group>"; };
+		D8F5A41B1D2FFFA000C056F3 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D881B2AF1D2DA9D500B92518 /* Dog.swift */,
+				D8F5A41B1D2FFFA000C056F3 /* DataStore.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECA25461D2EBB4D00F5135F /* CardView.swift in Sources */,
+				D8F5A41C1D2FFFA000C056F3 /* DataStore.swift in Sources */,
 				D881B29A1D2DA13A00B92518 /* AppDelegate.swift in Sources */,
 				D881B2AE1D2DA8EA00B92518 /* AdoptablesTableViewController.swift in Sources */,
 				5ECA25451D2EBB4D00F5135F /* CardStack.swift in Sources */,
