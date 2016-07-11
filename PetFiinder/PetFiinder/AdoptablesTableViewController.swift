@@ -12,8 +12,12 @@ class AdoptablesTableViewController: UITableViewController {
     
     @IBOutlet var adoptTableView: UITableView!
     
+    var currentDog : Dog?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
         
         self.tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 60))
         
@@ -46,6 +50,31 @@ class AdoptablesTableViewController: UITableViewController {
         cell.breedLabel.text = dirtyDog?.breed
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.currentDog = DataStore.sharedInstance.favoriteAtIndex(indexPath.row)
+        
+        self.performSegueWithIdentifier("ProfileSegue", sender: nil)
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ProfileSegue" {
+            
+            if let controller = segue.destinationViewController as? ProfileViewController {
+                controller.theDog = self.currentDog
+                
+            } else {
+                print("Not the correct segue")
+            }
+        }
+        
+    }
+    
+    @IBAction override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
+        print("unwindSegue called")
     }
 
 }
